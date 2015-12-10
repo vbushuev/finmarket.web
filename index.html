@@ -1,0 +1,619 @@
+<!--
+login renessbank
+pass 7F:pkQWJ
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="user-scalable=yes,width=device-width,initial-scale=1">
+  <meta name="description" content="Займы для бизнеса разработаны специально для субъектов малого бизнеса. Рассмотрение заявки в течение дня, минимальный пакет документов.">
+  <meta name="keywords" content="займ, бизнес, группа, компания, малый, кредит, поддержка">
+  <title>Займы для малого бизнеса - Группа Компаний</title>
+  <link href="images/logo.png" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/start/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="modalOut"></div>
+    <div class="modal"></div>
+    <section id="banner_ke">
+      <header>
+        <img src="images/logo.png" style="width: 5em;">
+        <h2 style="vertical-align: 0.85em;">Займ Капитал-экспресс</h2>
+        <sup class="small">малые вложения - большие возможности</sup>
+      </header>
+    </section>
+    <section class="wrapper style3" id="ke_banner_after">
+    	<div class="container">
+    		<div class="row">
+    			<section class="4u 12u(2)">
+            <i class="fa fa-clock-o fa-2x"></i><br>
+            Возможность оперативного пополнения расчетного счета в любой момент
+    			</section>
+    			<section class="4u 12u(2)">
+            <i class="fa fa-check-circle-o fa-2x"></i><br>
+    				Рассмотрение заявки и принятие решения за один рабочий день
+    			</section>
+    			<section class="4u 12u(2)">
+
+            <i class="fa fa-pencil-square-o fa-2x"></i><br>
+    				Минимальный комплект документов, простой порядок взаиморасчетов
+    			</section>
+    		</div>
+    	</div>
+    </section>
+  </div>
+  <div class="content">
+      <section class="wrapper style1">
+    		<div class="container formTabs">
+    			<header class="major">
+    				<h2 id="paymentschedule">Калькулятор займа</h2>
+    				<p style="margin-bottom: -3em;"></p>
+    			</header>
+    			<div class="row">
+    				<section class="8u 12u(2) calc_bars">
+    					<table>
+                <tbody><tr>
+                  <td>
+                    <em>
+                      Вид займа:
+                      <select id="ke_type" class="select_inp" style="margin-left: 25px;">
+                        <option>Без залога</option>
+                        <option>Залог недвижимости</option>
+                        <option>Залог автомобиля</option>
+                      </select>
+                      <br> <br>
+                      <hr>
+                  </em></td>
+                </tr>
+    						<tr>
+    							<td><em>Сумма займа:<input class="inp_slider" id="ke_summ" value="100000" type="number" min="50000" step="10000" max="2400000">руб.</em></td>
+    						</tr>
+    						<tr>
+    							<td>
+    								<div id="ke_summSlider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div><br><hr>
+    							</td>
+    						</tr>
+    						<tr>
+    							<td><br><em>Срок займа:<input style="margin-left: 15px;" class="inp_slider" id="ke_srok" value="12" type="number" min="1" max="18" step="1/">мес.</em></td>
+    						</tr>
+    						<tr>
+    							<td>
+    								<div id="ke_srokSlider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div><br><hr>
+    							</td>
+    						</tr>
+    					</tbody></table>
+
+    				</section>
+    				<section class="4u 12u(2)  payment center" style="padding-top: 179.827px;">
+    					<h2 class="center">
+    						<em>Ежемесячный платеж: <br></em>
+    						<span id="ke_res">32 276 руб.</span>
+    					</h2>
+    				</section>
+    			</div>
+    			<div class="row">
+    				<section class="12u 12u(2) center">
+    					<a class="button center" id="ke_scheludeButton" style="display: inline-block;">Показать график платежей</a>
+    					<table id="ke_scheludeTable" class="default" style="display: none;">
+                <tfoot>
+                  <tr>
+                    <td colspan="5">
+                      <em>*представленный график платежей носит информационный характер и не является публичной офертой.</em>
+                    </td>
+                  </tr>
+                </tfoot>
+    						<thead>
+    							<tr>
+    								<td>#</td>
+    								<td>Сумма платежа</td>
+    								<td>Основной долг</td>
+    								<td>Проценты</td>
+    								<td>Остаток основного долга</td>
+    							</tr>
+    						</thead>
+    						<tbody><tr><td>1</td><td>32 276</td><td>19 536</td><td>12 740</td><td>280 464</td></tr><tr><td>2</td><td>32 276</td><td>20 365</td><td>11 910</td><td>260 099</td></tr><tr><td>3</td><td>32 276</td><td>21 943</td><td>10 333</td><td>238 156</td></tr><tr><td>4</td><td>32 276</td><td>22 162</td><td>10 113</td><td>215 994</td></tr><tr><td>5</td><td>32 276</td><td>23 399</td><td>8 876</td><td>192 595</td></tr><tr><td>6</td><td>32 276</td><td>24 097</td><td>8 179</td><td>168 498</td></tr><tr><td>7</td><td>32 276</td><td>25 351</td><td>6 925</td><td>143 147</td></tr><tr><td>8</td><td>32 276</td><td>26 197</td><td>6 079</td><td>116 950</td></tr><tr><td>9</td><td>32 276</td><td>27 309</td><td>4 966</td><td>89 641</td></tr><tr><td>10</td><td>32 276</td><td>28 592</td><td>3 684</td><td>61 049</td></tr><tr><td>11</td><td>32 276</td><td>29 683</td><td>2 593</td><td>31 366</td></tr><tr><td>12</td><td>32 655</td><td>31 366</td><td>1 289</td><td>0</td></tr><tr class="scheludeTotal"><td>Итого</td><td>387 686</td><td>300 000</td><td>87 686</td><td> - </td></tr></tbody>
+    					</table>
+    					<a class="button center" id="ke_scheludeClose" style="display: none; padding-top: 0.75em; padding-bottom: 0.75em;">Скрыть график платежей</a>
+    					<br><br>
+    				</section>
+    			</div>
+    		</div>
+    	</section>
+      <section class="wrapper style2">
+    		<div class="container">
+    			<header class="major">
+    				<h2>Заявка на займ</h2>
+    				<p style="margin-bottom: -3em;"></p>
+    			</header>
+    			<div class="row" id="ke_form_small">
+    				<section class="12u 12u(2)">
+    					<div id="ke_small_form" class="formTabs">
+    						<div class="row">
+    							<!--<section class="12u 12u(2)">
+    								<h2 class="center" style="margin-bottom: -20px;">Краткая заявка</h2>
+    							</section>-->
+                  <section class="4u 12u(2)">
+    								<label for="ke_small_type">
+    									<span>Вид займа:</span>
+    									<select class="inputSelect" id="ke_small_type" type="select">
+                        <option>Без залога</option>
+                        <option>Залог недвижимости</option>
+                        <option>Залог автомобиля</option>
+                      </select>
+    								</label>
+    							</section>
+    							<section class="4u 12u(2)">
+    								<label for="ke_small_summ">
+    									<span>Сумма займа:</span>
+    									<input type="number" class="inputNumber" id="ke_small_summ" value="400000" tooltip="Укажите необходимый размер лимита (в рублях) <hr/>
+                                 ✓ Например: 400 000">
+    								</label>
+    							</section>
+    							<section class="4u 12u(2)">
+    								<label for="ke_small_auto" style="display: none;">
+    									<span>Автомобиль:</span>
+    									<input type="text" id="ke_small_auto" tooltip="Укажите марку, модель и год выпуска автомобиля <hr/>
+                                 ✓ Например: Opel Astra 2010">
+    								</label>
+                    <label for="ke_small_build" style="display: none;">
+    									<span>Недвижимость:</span>
+    									<input type="text" id="ke_small_build" tooltip="Укажите объект недвижимости <hr/>
+                                 ✓ Например: Квартира ул. Милашенкова д.1, 83">
+    								</label>
+    							</section>
+    						</div>
+    						<div class="row">
+    							<section class="4u 12u(2)">
+    								<label for="ke_small_phone">
+    									<span>Телефон:</span>
+    									<input type="tel" id="ke_small_phone" mask="+7 (999) 999 99 99" tooltip="Укажите телефон для связи <hr/>
+    										   ✓ Например: 8 123 456 78 90">
+    								</label>
+    							</section>
+    							<section class="4u 12u(2)">
+    								<label for="ke_small_name">
+    									<span>Ваше имя:</span>
+    									<input type="text" id="ke_small_name" tooltip="Как к Вам обращаться? <hr/>
+                                 ✓ Например: Иван Иванович">
+    								</label>
+    							</section>
+    						</div>
+    						<div class="row">
+    							<section class="6u 12u(2)">
+    								<label for="ke_small_check">
+    									<input type="checkbox" id="ke_small_check">
+                          <span>Я согласен(согласна) с <a id="personal_data_condition">условиями обработки</a>
+                          моих персональных данных</span>
+    								</label>
+    							</section>
+    							<section class="6u 12u(2)">
+    								<a class="button center" id="ke_small_submit">Отправить</a>
+    							</section>
+    						</div>
+                <div class="row">
+                  <section class="1u 12u(2) center not-mobile">
+                      <img src="images/icon/block.png" alt="" style="width: 100%; margin-top: 0.25em; max-width: 5em;">
+                  </section>
+                  <section class="11u 12u(2) small">
+                    <p>
+                      Группа Компаний не передает третьим лицам информацию, полученную при заполнении заявок.
+                      <a href="#" target="_blank">
+                        Правила обработки персональных данных
+                      </a>
+                      гарантируют защиту и конфиденциальность передаваемой
+                      информации.
+                    </p>
+                  </section>
+                </div>
+    					</div>
+    				</section>
+    			</div>
+    		</div>
+    	</section>
+    <section class="wrapper style1">
+    	<div class="container">
+    		<div class="formTabs">
+    			<header class="major">
+          <h2>Связаться с нами</h2>
+          <p style="margin-bottom: -3em;"></p>
+        </header>
+        <div class="row">
+          <section class="12u 12u(2)">
+            Наши специалисты проконсультируют по любому вопросу по телефону
+            <p class="phone"><a href="tel:+74999998877"> +7 (499) 999 88 77</a>  (работает круглосуточно)</p>
+
+            Вы можете оставить заявку на обратный звонок, мы свяжемся в указанное Вами время
+            <p class="phone"><a id="ke_call_me">Заявка на обратный звонок</a></p>
+
+            Также предлагаем ознакомиться со списком часто задаваемых вопросов по продукту "Капитал-экспресс"
+            <p class="phone"><a id="ke_faq">Часто задаваемые вопросы</a></p>
+
+          </section>
+        </div>
+    		</div>
+    </div>
+    <section>
+    <section class="wrapper style2">
+    		<div class="container">
+    			<header class="major">
+    				<h2>Основные условия</h2>
+    				<p style="margin-bottom: -3em;">
+            </p>
+    			</header>
+    			<div class="row" id="ke_tabs_accord">
+    				<section class="12u 12u(2)">
+              <div class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Без залога</h3>
+                <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true" style="display: none;">
+                  <h4>Основные условия</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Размер лимита - 300 000 рублей</li>
+                    <li>Срок договора - 36 месяцев</li>
+                    <li>Обеспечение - поручительство собственников компании</li>
+                  </ul><hr>
+                  <h4>Требования к бизнесу</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Юридический статус ИП, ООО, ЗАО, ОАО</li>
+                    <li>Адрес регистрации Москва или Московская область</li>
+                    <li>Наличие лицензий, если деятельность подлежит лицензированию</li>
+                  </ul><hr>
+                  <h4>Требования к поручителям</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Гражданин Российской Федерации</li>
+                    <li>Возраст от 21 до 65 лет</li>
+                    <li>Постоянное проживание в Москве или Московской области</li>
+                  </ul><hr>
+                  <h4>Необходимые документы</h4>
+                  <div class="ke_tab">
+                    <p>Для индивидуального предпринимателя:</p>
+                    <ul class="my_ul">
+                      <li>Копия свидетельства о регистрации физического лица в
+                      качестве индивидуального предпринимателя</li>
+                      <li>Копия свидетельства о постановке на учет в налоговом органе</li>
+                      <li>Выписка из ЕГРИП (сроком изготовления не больше 30 рабочих дней
+                      на момент подачи Заявления), если срок с момента регистрации
+                      Заявителя составляет менее 6 месяцев</li>
+                      <li>Справка из банков об
+                      открытых расчетных счетах Заявителя</li>
+                    </ul>
+
+                    <p>Для ООО/ЗАО/ОАО:</p>
+                    <ul class="my_ul">
+                      <li>Копия устава</li>
+                      <li>Копия решения общего собрания участников о
+                      назначении единоличного исполнительного органа</li>
+                      <li>Копия приказа о назначении единоличного исполнительного органа</li>
+                      <li>Копия свидетельства о регистрации юридического лица</li>
+                      <li>Копия свидетельства о постановке на учет в налоговом органе</li>
+                      <li>Выписка из ЕГРЮЛ (сроком изготовления не больше 30 рабочих дней
+                      на момент подачи Заявления), если срок с момента регистрации
+                      Заявителя составляет менее 6 месяцев</li>
+                      <li>Справка из банков об
+                      открытых расчетных счетах Заявителя</li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Залог недвижимости</h3>
+                <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;">
+                  <h4>Основные условия</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Размер лимита - от 300 000 до 1 000 000 рублей</li>
+                    <li>Срок договора - 36 месяцев</li>
+                    <li>Обеспечение - поручительство собственников компании и залог автомобиля</li>
+                  </ul><hr>
+                  <h4>Требования к бизнесу</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Юридический статус ИП, ООО, ЗАО, ОАО</li>
+                    <li>Адрес регистрации Москва или Московская область</li>
+                    <li>Наличие лицензий, если деятельность подлежит лицензированию</li>
+                  </ul><hr>
+                  <h4>Требования к поручителям</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Гражданин Российской Федерации</li>
+                    <li>Возраст от 21 до 65 лет</li>
+                    <li>Постоянное проживание в Москве или Московской области</li>
+                  </ul><hr>
+                  <h4>Требования к недвижимости</h4>
+                  <div class="ke_tab">
+                    <ul class="my_ul">
+                      <li>Рыночная стоимость не менее 1 000 000 рублей</li>
+                      <li>Недвижимость не заложена, не арестована,  отсутствуют прочие обременения</li>
+                      <li>Собственником является компания или один из собственников. Если недвижимость принадлежит третьему лицу, требуется поручительство третьего лица</li>
+                      <li>Собственник недвижимости распоряжается имуществом </li>
+                    </ul>
+                  </div>
+                  <hr>
+                  <h4>Необходимые документы</h4>
+                  <div class="ke_tab">
+                    <p>Для индивидуального предпринимателя:</p>
+                    <ul class="my_ul">
+                      <li>Копия свидетельства о регистрации физического лица в
+                      качестве индивидуального предпринимателя</li>
+                      <li>Копия свидетельства о постановке на учет в налоговом органе</li>
+                      <li>Выписка из ЕГРИП (сроком изготовления не больше 30 рабочих дней
+                      на момент подачи Заявления), если срок с момента регистрации
+                      Заявителя составляет менее 6 месяцев</li>
+                      <li>Справка из банков об
+                      открытых расчетных счетах Заявителя</li>
+                      <li>Паспорт транспортного средства, свидетельство о регистрации транспортного средства</li>
+                    </ul>
+
+                    <p>Для ООО/ЗАО/ОАО:</p>
+                    <ul class="my_ul">
+                      <li>Копия устава</li>
+                      <li>Копия решения общего собрания участников о
+                      назначении единоличного исполнительного органа</li>
+                      <li>Копия приказа о назначении единоличного исполнительного органа</li>
+                      <li>Копия свидетельства о регистрации юридического лица</li>
+                      <li>Копия свидетельства о постановке на учет в налоговом органе</li>
+                      <li>Выписка из ЕГРЮЛ (сроком изготовления не больше 30 рабочих дней
+                      на момент подачи Заявления), если срок с момента регистрации
+                      Заявителя составляет менее 6 месяцев</li>
+                      <li>Справка из банков об
+                      открытых расчетных счетах Заявителя</li>
+                      <li>Паспорт транспортного средства, свидетельство о регистрации транспортного средства</li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-2"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Залог автомобиля</h3>
+                <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;">
+                  <h4>Основные условия</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Размер лимита - от 300 000 до 1 000 000 рублей</li>
+                    <li>Срок договора - 36 месяцев</li>
+                    <li>Обеспечение - поручительство собственников компании и залог автомобиля</li>
+                  </ul><hr>
+                  <h4>Требования к бизнесу</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Юридический статус ИП, ООО, ЗАО, ОАО</li>
+                    <li>Адрес регистрации Москва или Московская область</li>
+                    <li>Наличие лицензий, если деятельность подлежит лицензированию</li>
+                  </ul><hr>
+                  <h4>Требования к поручителям</h4>
+                  <ul class="my_ul ke_tab">
+                    <li>Гражданин Российской Федерации</li>
+                    <li>Возраст от 21 до 65 лет</li>
+                    <li>Постоянное проживание в Москве или Московской области</li>
+                  </ul><hr>
+                  <h4>Требования к автомобилю</h4>
+                  <div class="ke_tab">
+                    <ul class="my_ul">
+                      <li>Рыночная стоимость не менее 500 000 рублей</li>
+                      <li>Автомобиль не заложен, не арестован, не в лизинге, отсутствуют прочие обременения</li>
+                      <li>Собственником является компания или один из собственников. Если автомобиль принадлежит третьему лицу, требуется поручительство третьего лица</li>
+                      <li>Собственник автомобиля распоряжается имуществом (не требуется оставлять автомобиль на стоянке); ПТС автомобиля передается займодавцу на время действия договора</li>
+                    </ul>
+                  </div>
+                  <hr>
+                  <h4>Необходимые документы</h4>
+                  <div class="ke_tab">
+                    <p>Для индивидуального предпринимателя:</p>
+                    <ul class="my_ul">
+                      <li>Копия свидетельства о регистрации физического лица в
+                      качестве индивидуального предпринимателя</li>
+                      <li>Копия свидетельства о постановке на учет в налоговом органе</li>
+                      <li>Выписка из ЕГРИП (сроком изготовления не больше 30 рабочих дней
+                      на момент подачи Заявления), если срок с момента регистрации
+                      Заявителя составляет менее 6 месяцев</li>
+                      <li>Справка из банков об
+                      открытых расчетных счетах Заявителя</li>
+                      <li>Паспорт транспортного средства, свидетельство о регистрации транспортного средства</li>
+                    </ul>
+
+                    <p>Для ООО/ЗАО/ОАО:</p>
+                    <ul class="my_ul">
+                      <li>Копия устава</li>
+                      <li>Копия решения общего собрания участников о
+                      назначении единоличного исполнительного органа</li>
+                      <li>Копия приказа о назначении единоличного исполнительного органа</li>
+                      <li>Копия свидетельства о регистрации юридического лица</li>
+                      <li>Копия свидетельства о постановке на учет в налоговом органе</li>
+                      <li>Выписка из ЕГРЮЛ (сроком изготовления не больше 30 рабочих дней
+                      на момент подачи Заявления), если срок с момента регистрации
+                      Заявителя составляет менее 6 месяцев</li>
+                      <li>Справка из банков об
+                      открытых расчетных счетах Заявителя</li>
+                      <li>Паспорт транспортного средства, свидетельство о регистрации транспортного средства</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    				</section>
+    			</div>
+    		</div>
+    	</section>
+      <section class="wrapper style1">
+    		<div class="container">
+    			<header class="major">
+    				<h2>Документы</h2>
+    				<p style="margin-bottom: -4em;"></p>
+    			</header>
+    			<div class="row" id="docs">
+    				<section class="12u 12u(2)">
+              <ul class="my_ul">
+                <li><a href="#docs">Правила предоставления микрозаймов</a></li>
+                <li><a href="#docs">Образец договора микрозайма</a></li>
+                <li><a href="#docs">Образец договора поручительства</a></li>
+                <li><a href="#docs">Образец договора залога</a></li>
+    			      <li><a href="#docs">Брошюра Банка России о работе с МФО</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+  </div>
+  <div id="footer">
+		<div class="container">
+					<div class="row">
+						<section class="6u 12u(2)">
+							<p class="h3style">Контакты</p>
+							<ul>
+								<li>
+									Адрес: <a href="#" target="_blank">
+									г. Москва, пл. Красная, 1, палата №3</a>
+								</li>
+								<li>
+									Телефон: <a href="tel:+74999998877"> +7 (499) 999 88 77</a> (работает круглосуточно)
+								</li>
+								<li>
+									E-mail: <a href="mailto: company@company.ru">company@company.ru</a>
+								</li>
+							</ul>
+            </section>
+            <section class="6u 12u(2)">
+							<ul>
+								<li>
+									<p class="h3style">Время работы</p>
+									<ul class="my_ul">
+										<li>Понедельник - четверг: 09:30 - 19:00</li>
+										<li>Пятница: 09:30 - 18:00</li>
+										<li>Суббота: 10:00 - 16:00</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+
+				</div>
+				<!-- Copyright -->
+				<div class="copyright">
+						© 2015, Группа Компаний
+            <ul class="menu small">
+              <li>ООО "Компания 1" (ОГРН: 110xxx000xxxx)</li>
+              <li>ООО "Компания 2" (ОГРН: 110xxx000xxxx)</li>
+              <li>ООО "Компания 3" (ОГРН: 110xxx000xxxx)</li>
+            </ul>
+				</div>
+        <div class="copyright" id="footer">
+              <ul class="menu" style="color: #3a5c89;">
+                <li><a href="#footer">Группа Компаний</a></li>
+                <li><a href="#footer">Последние новости</a></li>
+							  <li><a href="#footer">Правила выдачи, документы и свидетельства</a></li>
+							  <li><a href="#footer">Контактная информация</a></li>
+							  <li><a href="#footer">Карта сайта</a></li>
+							</ul>
+        </div>
+			</div>
+
+
+<script type="template" id="template-conditions">
+	<h3>Согласие на обработку данных:</h3>
+	<p>
+		Я даю свое согласие Группе Компаний
+		на обработку, в том числе автоматизированную, своих персональных данных, указанных в настоящей заявке.
+		Указанные мною персональные данные предоставляются в целях получения займа и/или
+		исполнения договорных обязательств, и могут быть использованы при разработке Группой Компаний  новых
+		продуктов и услуг и информировании меня об этих продуктах и услугах. Группа Компаний  вправе использовать
+		любую информацию обо мне, в том числе информацию о неисполнении и/или ненадлежащем исполнении договорных
+		обязательств, при рассмотрении вопросов о предоставлении других услуг и заключении новых договоров.
+		Настоящее Согласие считается предоставленным с текущей даты и действительно в течение
+		пяти лет. По истечении указанного срока действие согласия считается продленным на каждые посследующие пять
+		лет при отсутствии сведений об его отзыве. Я уведомлен и согласен, что все полученные Группой Компаний
+		обо мне персональные данные, формируют Клиентскую Базу Данных Группы Компаний , в связи с чем,
+		Группа Компаний принимает на себя обязательство не передавать имеющиеся обо мне персональные данные
+		третьим лицам (кроме как в целях, указанных выше),  коллекторских агентств,
+		при неисполнении мной обязательств по возврату займа, по запросам государственных органов и/или
+		органов местного самоуправления, и/или при осуществлении действий направленных на защиту интересов и/или
+		восстановления нарушенных прав Группы Компаний, а также при использовании информации о неисполнении и/или
+		ненадлежащем исполнении мною договорных обязательств при рассмотрении вопросов о предоставлении других услуг и
+		заключении новых договоров.
+	</p>
+</script>
+
+
+<script type="template" id="template_call_me">
+	<h3>Заявка на обратный звонок</h3>
+  <p>
+    Ваш телефон: <br/> <input type="tel" id="call_me_phone" />
+  </p>
+  <p>
+    День звонка: <br/>
+    <select id="call_me_day">
+      <option>Сегодня</option>
+      <option>Завтра</option>
+      <option>Другой день</option>
+    </select>
+  </p>
+  <p style="display: none;" id="call_me_invisible">
+    Укажите дату звонка: <br/>
+    <input type="date" id="call_me_date" value='2015-12-04' />
+  </p>
+  <p>
+    Удоброе время звонка: <br/> <input type="time" id="call_me_time" />
+  </p>
+</script>
+
+<script type="template" id="template_avtozalog_faq">
+<h3>Часто задаваемые вопросы</h3>
+<p class="quest">Сколько занимает процедура выдачи денежных средств?</p>
+<p class="answ">Обычно процедура выдачи занимает 1,5-2 часа с момента вашего прихода в офис.
+Процедура выдачи значительно ускоряется, если Вы предварительно отправите онлайн-анкету на займ.</p>
+
+<p class="quest">Требуется ли предоставление справки о доходах?</p>
+<p class="answ">Нет, не требуется.</p>
+
+<p class="quest">Возможно ли получить займ под залог авто по доверенности с правом залога?</p>
+<p class="answ">Мы не предоставляем займы по доверенности. Однако Вы можете получить займ,
+если у Вас есть возможность приехать в наш офис с собственником автомобиля.
+Более подробную информацию Вы можете уточнить по телефону <span class='white'><a href='tel:84996539162'> 8 (499) 653 91 62</a>.</span></p>
+
+<p class="quest">У меня плохая кредитная история, могу ли я получить займ?</p>
+<p class="answ">При рассмотрении заявок учитывается совокупность факторов, к плохой кредитной истории мы относимся предельно лояльно.</p>
+
+<p class="quest">Какие автомобили принимаются под залог?</p>
+<p class="answ">Автомобиль должен стоять на учете в Москве или Московской области.
+Ограничения по году выпуска автомобиля отсутствуют, также мы принимаем к рассмотрению автомобили отечественного производства.
+</script>
+
+
+<script type="template" id="template_ke_faq">
+<h3>Часто задаваемые вопросы</h3>
+<p class="quest">Сколько времени требуется для принятия решения о предоставлении займа?</p>
+<p class="answ">Решение принимается в течение одного рабочего дня.</p>
+
+<p class="quest">Могу ли я получить займ наличными?</p>
+<p class="answ">Нет. Выдача заемных средств производится исключительно на расчетный счет.</p>
+
+<p class="quest">Обязательно ли наличие залога?</p>
+<p class="answ">Мы предоставляем займы на сумму до 300 000 рублей без залога.
+При наличии залога мы предлагаем пониженную процентную ставку, а сумма займа может составить до 1 000 000 рублей.
+</p>
+
+<p class="quest">Могу ли я предоставить в качестве залога автомобиль, находящийся не в моей собственности?</p>
+<p class="answ">Да, залогодателем может выступать третье лицо. При этом, автомобиль должен быть
+поставлен на учет в Москве или Московской области. С собственником будет заключен договор залога и поручительства.</p>
+</script>
+</div>
+<div id="skel-layers-hiddenWrapper" style="height: 100%;"></div>
+<div id="skel-layers-visibleWrapper" style="position: relative;"></div>
+<ul class="dropotron level-0" style="-webkit-user-select: none; display: none; position: absolute; z-index: 1000;">
+									<li style="white-space: nowrap;"><a href="#" parent="Онлайн-заявки => " style="display: block;">Автозалог</a></li>
+									<li style="white-space: nowrap;"><a href="#" parent="Онлайн-заявки => " style="display: block;">Займы бизнесу</a></li>
+								</ul><ul class="dropotron level-0 center" style="-webkit-user-select: none; position: absolute; z-index: 1000; left: 935.344px; top: 96px; opacity: 1; display: none;">
+                  <li style="white-space: nowrap;"><a href="#" style="display: block;">Онлайн-кабинет</a></li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Обратная связь</a></li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Оплата займов</a></li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Бонусная программа</a></li>
+								</ul><ul class="dropotron level-0 center" style="-webkit-user-select: none; position: absolute; z-index: 1000; left: 1265.2px; top: 96px; opacity: 1; display: none;">
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Архив новостей</a></li>
+              </ul><ul class="dropotron level-0 center" style="-webkit-user-select: none; position: absolute; z-index: 1000; left: 1328.58px; top: 96px; opacity: 1; display: none;">
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Группа Компаний </a></li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Документы и свидетельства</a></li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Контактная информация</a></li>
+									<li style="white-space: nowrap;"><a href="#" style="display: block;">Вакансии</a></li>
+								</ul>
+
+                <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+                <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+                <script src="js/cookie.js"></script>
+                <script src="js/jquery.inputmask/dist/jquery.inputmask.bundle.js"></script>
+                <script src="js/jquery-ui-and-app.min.js"></script>
+                <script src="js/capital-express.js"></script>
+</body>
+</html>
